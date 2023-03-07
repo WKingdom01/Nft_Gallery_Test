@@ -20,7 +20,7 @@ function App() {
       <Header />
       <div className='p-[40px] pt-40'>
         <Browser>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className='h-screen text-white'>Loading...</div>}>
             <Routes>
               <Route path='/' element={<Navigate to='/gallery' />} />
               <Route path='gallery' element={<Gallery />} />
