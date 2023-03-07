@@ -20,7 +20,7 @@ export const NFtDetailModal: React.FC<NftDetailModalProps> = ({ nftData, metaDat
   return (
     <div className='flex flex-col sm:flex-row justify-center gap-8 text-white'>
       <div>
-        <img src={image} alt={nftData.name} className='max-w-md' />
+        <img src={image} alt={nftData.name} className='max-w-sm md:max-w-md' />
       </div>
 
       <div className='flex flex-col gap-6 justify-start'>
@@ -38,7 +38,7 @@ export const NFtDetailModal: React.FC<NftDetailModalProps> = ({ nftData, metaDat
           <p className='text-xl'>Attributes:</p>
           <div className='grid grid-cols-2 gap-2'>
             {metaData?.attributes.map((attribute: NftAttribute, index: number) => (
-              <div key={index} className='border-2 border-gray-200 rounded text-center w-[200px]'>
+              <div key={index} className='border-2 border-gray-200 rounded text-center w-[130px] md:w-[200px]'>
                 <p className='text-blue-200 text-sm'>{attribute.trait_type}</p>
                 <p>{attribute.value}</p>
               </div>
