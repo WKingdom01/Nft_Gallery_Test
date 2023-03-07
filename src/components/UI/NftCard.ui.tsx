@@ -26,7 +26,7 @@ export const NftCard: React.FC<INftCardProps> = ({ nftData }) => {
 
   return (
     <div onClick={openModal} aria-hidden='true'>
-      <div className='bg-brand-200/20 max-w-[200px] rounded-x\jsx-eslint\eslint-plugin-jsx-a11y\tree\HEAD\docs\rules\click-events-have-key-events.mdl text-white overflow-hidden ease-in transition-all hover:transform hover:-translate-y-2 hover:outline hover:outline-1 hover:outline-gray-100 hover:shadow-lg hover:cursor-pointer'>
+      <div className='bg-brand-200/20 max-w-[150px] md:max-w-[200px] rounded-x\jsx-eslint\eslint-plugin-jsx-a11y\tree\HEAD\docs\rules\click-events-have-key-events.mdl text-white overflow-hidden ease-in transition-all hover:transform hover:-translate-y-2 hover:outline hover:outline-1 hover:outline-gray-100 hover:shadow-lg hover:cursor-pointer'>
         <img className='w-full aspect-square block' alt={nftData.name} src={image} />
         <div className='flex justify-start gap-2 p-4'>
           <h3 className='text-xl uppercase mt-2 font-semibold '>{nftData.token_id}</h3>

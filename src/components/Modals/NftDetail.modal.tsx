@@ -18,7 +18,7 @@ export const NFtDetailModal: React.FC<NftDetailModalProps> = ({ nftData, metaDat
     setImage('https://ipfs.io/ipfs/' + metaData.image.slice(7));
   }, [ metaData ]);
   return (
-    <div className='flex justify-center gap-8 text-white'>
+    <div className='flex flex-col sm:flex-row justify-center gap-8 text-white'>
       <div>
         <img src={image} alt={nftData.name} className='max-w-md' />
       </div>

@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     register('nft', NFtDetailModal);
-  }, [ register ]);
+  }, []);
 
   return (
     <div className='App bg-zinc-700 '>
